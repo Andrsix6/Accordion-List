@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    color: #fff;
+    background-color: #000;
+    font-family: "Source Code Pro", monospace;
+}
+
+.faq{
+    width: 100%;
+}
+
+.faq h1{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.faq-list{
+    margin: 50px auto;
+    max-width: 815px;
+    font-size: 26px;
+}
+
+.faq-question,
+.faq-answer{
+    background-color: #303030
+}
+
+.faq-question{
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-bottom: 1px;
+}
+
+
+.faq-question::after{
+    content: " ";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../imagem/fechar.svg) no-repeat center center;
+    transform: rotate(45deg)
+}
+
+.faq-answer > div{
+    padding: 30px;
+
+}
+
+.faq-question.active::after {
+    transform: rotate(0deg);
+}
+  
+
+.faq-answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+}
+
+.faq-answer.active {
+    max-height: 1200px;
+}
+
+footer{
+    background-color: #303030;
+    padding: 30px 0;
+   
+}
+
+footer p{
+    text-align: center;
+    font-size: 20px;
+}
+
+.redes-sociais{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+  
+.redes-sociais li{
+    margin-right: 1.5rem;
+    list-style: none;
+}
+
+.redes-sociais li a{
+    font-size: 40px;
+    color: #fff;
+}
+
+.redes-sociais li a:hover{
+    color: #3664FF;
+}
